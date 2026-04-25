@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Praf Barista</string>
     <string name="barista_caption">Android wrapper for the barista screen</string>
-    <string name="barista_url">https://your-deployed-domain.com/barista</string>
+    <string name="barista_url">https://yooo-7rk5.onrender.com/barista</string>
     <string name="refresh">Refresh</string>
     <string name="connection_error">Could not connect to the online barista server. Check the deployed URL and internet connection.</string>
 </resources>

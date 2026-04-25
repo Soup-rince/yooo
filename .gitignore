@@ -2,3 +2,7 @@ node_modules/
 .env
 *.log
 npm-debug.log*
+barista-android/.gradle/
+barista-android/.idea/
+barista-android/**/build/
+barista-android/local.properties

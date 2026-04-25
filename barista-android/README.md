@@ -22,7 +22,7 @@ That way:
 This app is a `WebView` wrapper for the barista page:
 
 ```text
-https://your-deployed-domain.com/barista
+https://yooo-7rk5.onrender.com/barista
 ```
 
 So once your backend is hosted online, the APK can load that screen directly.
@@ -45,10 +45,10 @@ Edit:
 Change:
 
 ```xml
-<string name="barista_url">https://your-deployed-domain.com/barista</string>
+<string name="barista_url">https://yooo-7rk5.onrender.com/barista</string>
 ```
 
-to your real deployed URL, for example:
+to your real deployed URL if it ever changes, for example:
 
 ```xml
 <string name="barista_url">https://praf-pos.onrender.com/barista</string>
@@ -85,20 +85,20 @@ This repo now includes:
 After deploy, your app URL should look like:
 
 ```text
-https://your-app-name.onrender.com
+https://yooo-7rk5.onrender.com
 ```
 
 Then the barista page will be:
 
 ```text
-https://your-app-name.onrender.com/barista
+https://yooo-7rk5.onrender.com/barista
 ```
 
 ## Build APK
 
 1. Open `barista-android` in Android Studio
 2. Wait for Gradle sync
-3. Update `barista_url` in `strings.xml`
+3. Confirm `barista_url` in `strings.xml` is correct
 4. Go to `Build`
 5. Choose `Build APK(s)`
 
