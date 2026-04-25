@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praf Barista App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <p class="eyebrow">Praf Workflow</p>
+        <h1>Barista View</h1>
+        <p class="sidebar-copy">Use this as an on-screen receipt monitor when there is no printer. Baristas just read the incoming receipts here.</p>
+      </div>
+      <div class="sidebar-panel">
+        <span class="panel-label">Mode</span>
+        <strong>Screen Receipt Feed</strong>
+        <p>Newest paid receipts appear on screen so the barista can prepare drinks without needing a printed slip.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Live Feed</p>
+          <h2>Barista Receipt View</h2>
+        </div>
+        <div class="topbar-actions">
+          <span class="chip chip-warm" id="activeOrdersChip">0 receipts</span>
+          <button class="ghost-btn" type="button" onclick="loadOrders()">Refresh Orders</button>
+        </div>
+      </header>
+
+      <section class="summary-grid" id="summaryGrid"></section>
+
+      <section class="receipt-wall" id="receiptWall">
+        <div class="empty-state">
+          <div>
+            <strong>No receipts yet</strong>
+            <p>Paid receipts will appear here automatically.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="history-section">
+        <div class="history-head">
+          <div>
+            <p class="eyebrow">Fallback Check</p>
+            <h3>Recently Done</h3>
+          </div>
+          <span class="history-count" id="historyCount">0</span>
+        </div>
+        <div class="history-wall" id="historyWall">
+          <div class="empty-state">
+            <div>
+              <strong>No completed receipts yet</strong>
+              <p>Done receipts will appear here so the barista can double-check them later.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
